@@ -34,7 +34,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :test, :development do
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 8.0.0"
   gem "capybara"
   gem "selenium-webdriver"
   gem "better_errors"
