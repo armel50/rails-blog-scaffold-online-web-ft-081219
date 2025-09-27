@@ -1,23 +1,23 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Bundle edge Rails instead: gem 'rails', '>= 5.2.2.1', github: 'rails/rails'
 gem 'rails'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 5.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 gem 'bootsnap'
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.4'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', group: :doc
-gem 'rails-controller-testing'
+gem 'rails-controller-testing', '>= 1.0.5'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
@@ -34,10 +34,10 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :test, :development do
-  gem "rspec-rails"
-  gem "capybara"
+  gem "rspec-rails", ">= 3.8.3"
+  gem "capybara", ">= 3.14.0"
   gem "selenium-webdriver"
-  gem "better_errors"
+  gem "better_errors", ">= 2.6.0"
   gem "binding_of_caller"
   gem "factory_bot"
   gem "simplecov"
@@ -45,7 +45,7 @@ group :test, :development do
 gem 'sqlite3', '~> 1.3.6'
   gem "pry"
   gem "guard-rspec", require: false
-  gem "thin"
+  gem "thin", ">= 1.8.0"
 end
 
 gem "bootstrap-sass"
